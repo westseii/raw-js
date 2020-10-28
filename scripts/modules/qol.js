@@ -1,11 +1,9 @@
 const $ = document.querySelector.bind(document);
-const parser = new DOMParser();
-const trace = (message = "message") => console.trace(message);
 
-function parseHTMLString(HTMLString) {
-  const node = parser.parseFromString(HTMLString, "text/html").getRootNode().body.firstChild;
+const p = new DOMParser();
+const getHTMLNodesFromString = (s) =>
+  p.parseFromString(s, "text/html").getRootNode().body.firstChild;
 
-  return node;
-}
+const getRandomIntInclusive = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-export { $, trace, parseHTMLString };
+export { $, getHTMLNodesFromString, getRandomIntInclusive };

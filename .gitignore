@@ -1,1 +1,6 @@
+.DS_Store
+# *.ts
+node_modules/
+package-lock.json
 raw-js.code-workspace
+tsconfig.json

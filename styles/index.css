@@ -14,3 +14,77 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
 }
+
+#app-wrapper {
+  /* background: indianred; */
+  margin: 40px 0 0 40px;
+  overflow: hidden;
+  padding: 8px;
+  width: 800px;
+}
+
+#unordered-list {
+  /* background: lightpink; */
+  margin: 0 0 8px 0;
+  max-height: 400px;
+  min-height: 200px;
+  overflow: auto;
+  padding: 0;
+}
+
+#unordered-list-trash {
+  /* background: lightsalmon; */
+  margin: 0 0 8px 0;
+  max-height: 400px;
+  min-height: 200px;
+  overflow: auto;
+  padding: 0;
+}
+
+#user-input {
+  /* background: lightseagreen; */
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+#user-input-title-text {
+  border: none;
+  padding: 8px;
+  width: 234px;
+}
+
+#user-input-body-text {
+  border: none;
+  padding: 8px;
+  width: 434px;
+}
+
+#user-input-add {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  padding-left: 8px;
+}
+
+.todo-item-title {
+  font-weight: bold;
+}
+
+.todo-item-body {
+  margin-left: 8px;
+}
+
+.todo-item-delete {
+  margin-left: auto;
+}
